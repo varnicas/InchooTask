@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Inchoo</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="myHeader">
+        <div class="upperHeader">
+          <div class="upperFirst">
+            <p class="upperFirstParagraph">Contact our customer service</p>
+            <div class="upperFirstPhone">
+              <img src="./images/telephone.svg" alt="telephone" />
+              <p class="numbers">(800) 333-3567</p>
+            </div>
+            <ul>
+              <li>
+                <img src="./images/dot.svg" alt="dot" />
+                About
+              </li>
+              <li>
+                <img src="./images/dot.svg" alt="dot" />
+                Contact us
+              </li>
+              <li>
+                <img src="./images/dot.svg" alt="dot" />
+                Where to buy
+              </li>
+            </ul>
+          </div>
+          <div class="upperSecond">
+            <p class="promoMessage">
+              Promo message area - shipping advantages,special offers...
+            </p>
+            <a href="#" class="signIn">
+              <img src="./images/human.svg" alt="human" />
+              Sign in</a
+            >
+          </div>
+        </div>
+
+        <div class="downHeader">
+          <div class="downFirst">
+            <div class="dropdown">
+              <button class="dropdownButton" onClick="myFunction()"></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Soft top products</a>
+                <a href="#">Jeep accessories</a>
+              </div>
+            </div>
+            <img src="./images/inchoo-logo 1.svg" alt="inchoo" class="logo1" />
+            <img src="./images/inchoo-logo 2.svg" alt="inchoo" class="logo2" />
+            <ul class="list" id="dropdownMenu">
+              <li class="firstLi">
+                <img src="./images/Line1.svg" alt="orangeLine" />
+                <p>Soft top products</p>
+              </li>
+              <li class="secondLi">
+                <img src="./images/Line2.svg" alt="line" />
+                <p>Jeep accessories</p>
+              </li>
+            </ul>
+          </div>
+          <div class="downSecond">
+            <div class="searchBar">
+              <input
+                type="text"
+                placeholder="Search entire store here"
+                class="inputSearchBar"
+              />
+              <div class="searchBarSecond">
+                <img src="./images/search.svg" alt="search" />
+              </div>
+            </div>
+            <button class="searchButton"></button>
+            <div class="buttonDiv">
+              <button class="cartButton">
+                <img src="./images/shopping-cart.svg" alt="cart" />
+                <p class="cartParagraph">My Cart</p>
+                <img
+                  src="./images/downLine.svg"
+                  alt="downLine"
+                  class="downLine"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="myMain">
+        <div class="mainPart">
+          <h1 class="desktopTitle">Shopping cart</h1>
+          <div class="tablePart">
+            <table border="0" class="mainTable">
+              <thead>
+                <tr>
+                  <th class="headRow">Item</th>
+                  <th></th>
+                  <th>Qty</th>
+                  <th class="headRow">Subtotal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="firstRow">
+                  <td class="jeepContainer">
+                    <img
+                      src="./images/jeep.png"
+                      alt="Jeep"
+                      width="294px"
+                      height="145.168px"
+                      class="jeepImage"
+                    />
+                  </td>
+                  <td class="secondColumn">
+                    Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995
+                    CJ-7/Wrangler, No doors included, Clear side and rear
+                    windows
+                    <p><span>Color:</span> Black Denim</p>
+                  </td>
+                  <td class="thirdColumn">
+                    <div class="thirdColumnDiv">1</div>
+                  </td>
+                  <td class="fourthColumn">
+                    <div class="fourthColumnDiv">
+                      $150.00
+                      <div>
+                        <img src="./images/editShape.svg" alt="" />
+                        <img src="./images/xShape.svg" alt="" />
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="jeepContainer">
+                    <img
+                      src="./images/jeep.png"
+                      alt="Jeep"
+                      width="294px"
+                      height="145.168px"
+                      class="jeepImage"
+                    />
+                  </td>
+                  <td class="secondColumn">
+                    Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995
+                    CJ-7/Wrangler, No doors included, Clear side and rear
+                    windows
+                    <p><span>Color:</span> Black Denim, MATT</p>
+                  </td>
+                  <td class="thirdColumn">
+                    <div class="thirdColumnDiv">1</div>
+                  </td>
+                  <td class="fourthColumn">
+                    <div class="fourthColumnDiv">
+                      $250.00
+                      <div>
+                        <img src="./images/editShape.svg" alt="" />
+                        <img src="./images/xShape.svg" alt="" />
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table border="0" class="mobileTable">
+              <tr>
+                <td class="columns">
+                  <img src="./images/flip_top_frameless_ copy.svg" alt="jeep" />
+                </td>
+                <td class="tableText">
+                  Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995
+                  CJ-7/Wrangler, No doors included, Clear side and rear windows
+                  <p><span>Color:</span> Black Denim</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="tableTitle">Qty</td>
+                <td class="tableTitle2">Subtotal</td>
+              </tr>
+              <tr>
+                <td><p class="tableNumber">1</p></td>
+                <td class="tablePrice">$150.00</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="shapes">
+                  <img src="./images/editShape.svg" alt="edit" />
+                  <img src="./images/xShape.svg" alt="exit" class="images" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./images/flip_top_frameless_ copy.svg" alt="jeep" />
+                </td>
+                <td class="tableText">
+                  Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995
+                  CJ-7/Wrangler, No doors included, Clear side and rear windows
+                  <p><span>Color:</span> Black Denim, MATT</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="tableTitle">Qty</td>
+                <td class="tableTitle2">Subtotal</td>
+              </tr>
+              <tr>
+                <td><p class="tableNumber">1</p></td>
+                <td class="tablePrice">$250.00</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="shapes">
+                  <img src="./images/editShape.svg" alt="edit" />
+                  <img src="./images/xShape.svg" alt="exit" class="images" />
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="partUnderTable">
+            <div class="discountPart">
+              <input
+                type="text"
+                name="discount"
+                id="discount"
+                placeholder="Enter Discount Code"
+              />
+              <button>Apply</button>
+            </div>
+            <div class="updateCart">
+              <button class="buttonUpdateCart">Update shopping cart</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="mySidebar">
+          <h1 class="mobileTitle">Shopping cart</h1>
+          <h1 class="summaryTitle">Summary</h1>
+
+          <div class="summary">
+            <div class="interactiveField" id="toggleButton">
+              Estimate shipping and tax
+              <img
+                src="./images/plusLogo.svg"
+                alt="plusLogo"
+                id="buttonImage"
+              />
+            </div>
+            <div class="collapseDiv" id="collapseDiv">
+              <div class="country">
+                <label for="countries" class="labels">Country:</label>
+
+                <select name="country" id="coountry" class="inputs">
+                  <option value="USA" class="options">United States</option>
+                  <option value="japan" class="options">Japan</option>
+                  <option value="canada" class="options">Canada</option>
+                </select>
+                <label for="state" class="labels">State/Province </label>
+                <input type="text" name="state" id="state" class="inputs" />
+                <label for="zip" class="labels">Zip/Postal Code</label>
+                <input type="text" name="zip" id="zip" class="inputs" />
+                <div class="radioButton">
+                  <label for="rate" class="labels">Flat Rate</label><br />
+                  <input
+                    type="radio"
+                    id="rate"
+                    name="rate"
+                    value="Fixed ($5.00)"
+                  />Fixed <span>($5.00)</span>
+                </div>
+              </div>
+            </div>
+            <div class="summaryMiddleDiv">
+              <div class="summaryMiddleDivUpper">
+                Subtotal
+                <p>$150.00</p>
+              </div>
+              <div class="summaryMiddleDivUnder">
+                Shipping
+                <span class="flatRate">(Flat rate - Fixed)</span>
+                $5.00
+              </div>
+            </div>
+            <div class="summaryBottomDiv">
+              <div class="summaryBottomDivUpper">
+                ORDER TOTAL
+                <p>$155.00</p>
+              </div>
+              <div class="summaryBottomDivMiddle">
+                <button class="buttonProceed">Proceed to checkout</button>
+              </div>
+              <div class="summaryBottomDivUnder">
+                <a href="">Checkout with multiple addresses</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="myFooter">
+        <div class="footerUpper">
+          <p class="trademark">
+            © Jeep is a registered trademark of FCA US LLC.
+          </p>
+          <ul class="footerList">
+            <li>
+              <p>About us</p>
+              <img src="./images/smallLine.svg" alt="smallLine" />
+            </li>
+            <li>
+              <p>Contact us</p>
+              <img src="./images/smallLine.svg" alt="smallLine" />
+            </li>
+            <li>
+              <p>Search terms</p>
+              <img src="./images/smallLine.svg" alt="smallLine" />
+            </li>
+            <li>
+              <p>Privacy and cookie policy</p>
+              <img src="./images/smallLine.svg" alt="smallLine" />
+            </li>
+            <li><p>Installation videos</p></li>
+          </ul>
+        </div>
+        <div class="footerUnder">
+          Contact our Customer Service
+          <p>
+            <img src="./images/telephone.svg" alt="telephone" />(800) 333-3567
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1038 @@
+* {
+  margin: 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: 144px 1fr 162px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer";
+  height: 100vh;
+}
+
+.myHeader {
+  grid-area: header;
+  background-color: white;
+}
+.upperHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2f2f2f;
+  height: 48px;
+  color: #f5f5f5;
+}
+
+.cartParagraph {
+  margin: 5px;
+}
+
+.upperFirst {
+  display: flex;
+}
+
+.upperFirst ul li {
+  display: inline;
+  font-size: 13px;
+  font-family: Titillium Web;
+  padding: 2px;
+}
+
+.downFirst ul li {
+  display: inline;
+  padding: 28px;
+  line-height: 24px; /* 100% */
+}
+.downSecond {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.inputSearchBar {
+  border: none;
+  width: 184px;
+  padding: 13px;
+  line-height: 12px;
+}
+.inputSearchBar:hover {
+  border: solid 1px #decebf;
+}
+
+.cartButton {
+  width: 143px;
+  height: 48px;
+  flex-shrink: 0;
+  background-color: #008421;
+  margin-left: 15px;
+  border: none;
+  color: #f5f5f5;
+  font-family: Bebas Neue;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upperSecond a:hover {
+  cursor: pointer;
+  color: #e0872c;
+}
+
+.upperFirst p:hover {
+  color: #e0872c;
+  cursor: pointer;
+}
+
+.upperFirst ul li:hover {
+  cursor: pointer;
+  color: #e0872c;
+}
+
+.cartButton:hover {
+  cursor: pointer;
+}
+
+.secondLi p:hover {
+  cursor: pointer;
+  color: #e0872c;
+}
+
+.firstLi:hover {
+  cursor: pointer;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 358px;
+  height: 48px;
+  flex-shrink: 0;
+  border: solid 2px black;
+}
+.searchBarSecond {
+  padding: 7px;
+}
+
+.firstLi {
+  color: #e0872c;
+  font-family: Bebas Neue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  /* 100% */
+  text-transform: uppercase;
+}
+
+.firstLi p {
+  display: inline-block;
+  color: #e0872c;
+  font-family: Bebas Neue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  /* 100% */
+  text-transform: uppercase;
+  width: 89px;
+}
+.secondLi {
+  color: #2f2f2f;
+  font-family: Bebas Neue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.secondLi p {
+  display: inline-block;
+  color: #2f2f2f;
+  font-family: Bebas Neue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 113px;
+}
+
+.upperFirstParagraph {
+  margin-right: 10px;
+}
+
+.upperFirstPhone {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.downHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 96px;
+  flex-shrink: 0;
+  color: #f5f5f5;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.16);
+}
+
+.downFirst {
+  display: flex;
+  align-items: center;
+}
+.upperSecond {
+  display: flex;
+  justify-content: space-around;
+}
+.signIn {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-family: Bebas Neue;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  text-transform: uppercase;
+}
+
+.promoMessage {
+  color: #f5f5f5;
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  padding-right: 30px;
+}
+
+.myMain {
+  grid-area: main;
+  /* height: 540px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 162px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.desktopTitle {
+  color: #2f2f2f;
+  font-family: Bebas Neue;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px; /* 88.889% */
+  margin-top: 80px;
+}
+
+.mobileTitle {
+  display: none;
+}
+
+.mainTable {
+  margin: 30px;
+}
+
+.firstRow {
+  width: 294px;
+  height: 145.168px;
+  flex-shrink: 0;
+}
+
+.headRow {
+  text-align: left;
+}
+
+.secondColumn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 294px;
+  height: 142px;
+  color: #2f2f2f;
+  font-family: Bebas Neue;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  text-transform: uppercase;
+}
+
+.secondColumn span {
+  color: #2f2f2f;
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  text-transform: none;
+}
+
+.secondColumn p {
+  color: #2f2f2f;
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  text-transform: none;
+}
+
+.thirdColumnDiv {
+  border: 2px solid #2f2f2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 47.564px;
+  flex-shrink: 0;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.fourthColumnDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+.fourthColumn {
+  vertical-align: top;
+  padding-top: 25px;
+}
+
+.thirdColumn {
+  vertical-align: top;
+  padding: 10px;
+}
+
+.mySidebar {
+  grid-area: sidebar;
+  width: 400px;
+}
+
+.mobileTable {
+  display: none;
+}
+.summaryTitle {
+  color: #2f2f2f;
+  font-family: Bebas Neue;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  text-transform: uppercase;
+  padding-top: 116px;
+  padding-bottom: 10px;
+}
+
+.summary {
+  height: 338px;
+  width: 294px;
+  z-index: 0;
+  position: relative;
+}
+
+.jeepImage {
+  position: absolute;
+  top: 0;
+}
+
+.numbers {
+  color: #f5f5f5;
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+}
+
+.jeepContainer {
+  width: 294px;
+  height: 115.168px;
+  overflow: hidden;
+  position: relative;
+  fill: lightgray 0px 2.973px / 100% 141.979% no-repeat;
+}
+
+.discountPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.discountPart button {
+  width: 83px;
+  height: 48px;
+  flex-shrink: 0;
+  color: #2f2f2f;
+  font-family: Bebas Neue;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  text-transform: uppercase;
+}
+
+.discountPart input {
+  width: 211px;
+  height: 42px;
+}
+
+.buttonUpdateCart {
+  width: 294px;
+  height: 48px;
+  flex-shrink: 0;
+  color: #f5f5f5;
+  font-family: Bebas Neue;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  text-transform: uppercase;
+  background-color: #2f2f2f;
+}
+
+.buttonUpdateCart:hover {
+  cursor: pointer;
+  color: #e0872c;
+}
+
+.partUnderTable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.interactiveField {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  color: #2f2f2f;
+  font-family: Bebas Neue;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f5f5f5;
+}
+
+.trademark {
+  display: none;
+}
+
+.clickedDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  color: #008421;
+  font-family: Bebas Neue;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.interactiveField:hover {
+  cursor: pointer;
+}
+
+.summaryMiddleDivUpper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #2f2f2f;
+  font-family: Bebas Neue;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  text-transform: uppercase;
+}
+
+.summaryMiddleDivUnder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #2f2f2f;
+  font-family: Bebas Neue;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  text-transform: uppercase;
+}
+.summaryMiddleDiv {
+  background-color: #f5f5f5;
+}
+
+.flatRate {
+  padding-right: 10%;
+  color: #2f2f2f;
+  font-family: Titillium Web;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.summaryBottomDivUpper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: 35px;
+  color: #2f2f2f;
+  font-family: Bebas Neue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 100% */
+  text-transform: uppercase;
+}
+
+.summaryBottomDiv {
+  background-color: #f5f5f5;
+}
+
+.summaryBottomDivUpper p {
+  color: #2f2f2f;
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+}
+
+.buttonProceed {
+  display: flex;
+  width: 246px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #008421;
+  color: #f5f5f5;
+  text-align: center;
+  font-family: Bebas Neue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 100% */
+  text-transform: uppercase;
+  border: none;
+}
+
+.buttonProceed:hover {
+  cursor: pointer;
+}
+
+.summaryBottomDivMiddle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-top: 30px;
+}
+
+.summaryBottomDivUnder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summaryBottomDivUnder a {
+  color: #2f2f2f;
+  font-family: Titillium Web;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 123.077% */
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.myFooter {
+  grid-area: footer;
+  background-color: #2f2f2f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  height: 162px;
+  position: relative;
+}
+
+.footerList li {
+  display: inline-block;
+  color: #f5f5f5;
+  font-family: Titillium Web;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 123.077% */
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.footerList li p {
+  display: inline-block;
+  padding-right: 25px;
+}
+
+.footerList li p:hover {
+  cursor: pointer;
+  color: #e0872c;
+}
+
+.footerUnder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #f5f5f5;
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.footerUnder p {
+  color: #f5f5f5;
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  padding: 10px;
+}
+
+.footerUnder p:hover {
+  cursor: pointer;
+  color: #e0872c;
+}
+
+.searchButton {
+  display: none;
+}
+
+.collapseDiv {
+  height: 354px;
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+
+.logo2 {
+  display: none;
+}
+
+.country {
+  display: flex;
+  flex-direction: column;
+}
+
+.radioButton #rate {
+  margin: 8px;
+}
+
+.inputs {
+  width: 290px;
+  height: 48px;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.labels {
+  color: #2f2f2f;
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.dropdownButton {
+  display: none;
+}
+
+#dropdownSelect {
+  display: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownButton:hover {
+  background-color: #e0872c;
+  border-radius: 47%;
+}
+
+.dropdown-content a:hover {
+  background-color: #e0872c;
+}
+
+.show {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .myHeader {
+    max-width: 600px;
+  }
+  .upperFirstParagraph,
+  .numbers,
+  .promoMessage,
+  .searchBar,
+  .list,
+  .cartParagraph,
+  .downLine,
+  .logo1,
+  .desktopTitle {
+    display: none;
+  }
+
+  .searchBarSecond {
+    display: inline-block;
+  }
+
+  .dropdownButton {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border: none;
+    margin: 7px;
+    background-image: url("../images/menu.svg");
+    background-color: transparent;
+  }
+
+  .dropdownButton:hover {
+    cursor: pointer;
+  }
+
+  .cartButton {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .searchButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background-image: url("../images/search_active.svg");
+    margin: -7px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .signIn {
+    font-size: 15px;
+  }
+
+  select option {
+    width: 5px;
+    background-color: transparent;
+  }
+
+  .upperFirst ul li {
+    color: #f5f5f5;
+    font-family: Titillium Web;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 160% */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+  }
+  .upperFirst ul {
+    margin-left: -40px;
+  }
+
+  .logo2 {
+    display: inline-block;
+  }
+
+  .mobileTitle {
+    display: block;
+    color: #2f2f2f;
+    font-family: Bebas Neue;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 109.091% */
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-top: 14px;
+    margin-right: auto;
+  }
+
+  .myMain {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    overflow: auto;
+    min-height: 100vh;
+  }
+
+  .mainPart {
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    margin: 0;
+    max-width: 600px;
+  }
+
+  .mainTable {
+    display: none;
+  }
+
+  .summaryTitle {
+    display: none;
+  }
+
+  .summary {
+    margin: 0 auto;
+    margin-left: -12px;
+  }
+
+  .mySidebar {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    width: 274px;
+  }
+
+  .myFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 328px;
+    bottom: 0;
+  }
+
+  .footerUpper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerUpper img {
+    display: none;
+  }
+
+  .footerUpper p {
+    color: #f5f5f5;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 145.455% */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+  }
+
+  .footerUnder p {
+    color: #f5f5f5;
+    font-family: Titillium Web;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 133.333% */
+  }
+
+  .footerUnder {
+    color: #f5f5f5;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerUpper ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footerUpper .trademark {
+    display: inline;
+    color: #f5f5f5;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    text-decoration: none;
+    text-transform: none;
+  }
+
+  .partUnderTable {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 55px;
+    padding-bottom: 55px;
+  }
+
+  .discountPart {
+    padding-top: 10px;
+    margin-left: -1px;
+    width: 304px;
+  }
+
+  .buttonUpdateCart {
+    max-width: 304px;
+  }
+
+  .mobileTable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    flex-wrap: wrap;
+  }
+
+  .tableText {
+    color: #2f2f2f;
+    font-family: Bebas Neue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 100% */
+    text-transform: uppercase;
+    min-width: 144px;
+    padding: 8px;
+  }
+
+  .tableTitle {
+    color: #2f2f2f;
+    font-family: Titillium Web;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 133.333% */
+    min-width: 144px;
+    padding: 15px;
+  }
+  .tableTitle2 {
+    color: #2f2f2f;
+    font-family: Titillium Web;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 133.333% */
+    min-width: 144px;
+    text-align: right;
+    padding: 15px;
+  }
+
+  .tableNumber {
+    border: 2px solid #2f2f2f;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tablePrice {
+    display: flex;
+    justify-content: flex-end;
+    color: #2f2f2f;
+    font-family: Titillium Web;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 133.333% */
+    align-items: center;
+    padding: 8px;
+  }
+
+  .shapes {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .images {
+    padding: 12px;
+  }
+
+  .tableText p {
+    color: #2f2f2f;
+    font-family: Titillium Web;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+  }
+
+  .tableText span {
+    color: #2f2f2f;
+    font-family: Titillium Web;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 133.333% */
+  }
+}
